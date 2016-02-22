@@ -1,7 +1,7 @@
 var Parser = require('./lib/parser');
 
 function getGlobal() {
-	return this;
+	return this || global;
 }
 
 module.exports = {
